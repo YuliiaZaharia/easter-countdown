@@ -42,3 +42,31 @@ const button = document.querySelector("#myButton");
 button.addEventListener("click", function() {
 document.querySelector("#myAudio").play();
 })
+
+gsap.from('.heading', {
+    duration: 1.5,
+    opacity: 0,
+    y: 50,
+    stagger: 0.1,
+    ease: 'power4.out',
+  });
+
+  gsap.to('h1', {
+    duration: 3,
+    delay: 1.5,
+    color: '#FFE5E5',
+    repeat: -1,
+    yoyo: true,
+    ease: 'elastic.out(1, 0.3)',
+  });
+
+let isRotated = false;
+
+document.querySelector('#myButton').addEventListener('click', () => {
+  isRotated = !isRotated;
+  gsap.to('#myButton', {
+    duration: 0.5,
+    rotate: isRotated ? 360 : 0,
+    ease: 'power2.out',
+  });
+});

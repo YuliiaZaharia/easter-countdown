@@ -14,8 +14,13 @@ h1 {
     font-size: 80px;
     border: transparent; 
     padding: 20px;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Great Vibes', cursive;
     color: #fff;
+    border-radius: 30px;
+    background-color: rgba(127, 140, 141, 0.8);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 8px;
+    padding: 20px;
 }
 
 .container {
@@ -25,11 +30,14 @@ h1 {
 }
 
 .section {
-    border: transparent;
-    height: 100px;
-    width: 100px;
-    margin-top: 10px;
-}
+    background-color: rgba(127, 140, 141, 0.8);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border: transparent; 
+    height: 370px;
+    width: 210px;
+    margin-top: 30px;
+    border-radius: 8px;
+    }
 
 .block {
     display: flex;
@@ -38,22 +46,22 @@ h1 {
 }
 
 h3 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Spectral', serif;
     font-size: 30px; 
     color: #fff;
 }
 
 .days, .hours, .minutes, .seconds {
     font-size: 40px;
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Spectral', serif;
     color: #fff;
     font-size: 70px;
 }
 
 .red {
-    font-size: 70px;
+    font-size: 60px;
     border: none; 
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Great Vibes', cursive;
     color: #fff;
 }
 
@@ -70,13 +78,27 @@ button {
      h3 {
         font-size: 20px;
          }
+         .section {
+            height: 150px;
+            width: 150px;
+        }
+        .days, .hours, .minutes, .seconds {
+            font-size: 20px;
+        }
     }
     
     @media all and (max-width: 500px) {
         h1 {
-        font-size: 30px;
-         }
-         h3 {
-            font-size: 20px;
-             }
+        font-size: 40px;
+        }
+        h3 {
+        font-size: 15px;
+        }
+        .section {
+            height: 100px;
+            width: 100px;
+        }
+        .days, .hours, .minutes, .seconds {
+        font-size: 15px;
+        }
         }
