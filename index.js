@@ -70,3 +70,5 @@ document.querySelector('#myButton').addEventListener('click', () => {
     ease: 'power2.out',
   });
 });
+
+gsap.fromTo('.days, .hours, .minutes, .seconds', {y: -100 }, { y: 0, delay: .5, duration: 4, ease: 'bounce'});
