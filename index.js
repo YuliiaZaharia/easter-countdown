@@ -1,7 +1,7 @@
-function christmasCountdown() {
-    const christmasDate = new Date("March 31, 2024 00:00");
+function easterCountdown() {
+    const easterDate = new Date("March 31, 2024 00:00");
     const now = new Date();
-    const diff = christmasDate - now;
+    const diff = easterDate - now;
 
     const msInSecond = 1000;
     const msInMinute = 60 * 1000;
@@ -30,7 +30,7 @@ function christmasCountdown() {
     }
 }
 
-let timerID = setInterval(christmasCountdown, 1000);
+let timerID = setInterval(easterCountdown, 1000);
 
 function merryChristmas() {
     const heading = document.querySelector("h1");
